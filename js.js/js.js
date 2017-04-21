@@ -37,3 +37,18 @@ button.addEventListener("click", function(){
     	console.log("nothing");
     }
 });
+document.addEventListener("keyup", function(event) {
+	if (event.which === 13){
+		var temp = document.getElementById("tobeconverted").value;
+		if (F.checked){
+    	console.log("F to C");
+    	toCelsius(temp);
+    	} else if (C.checked){
+    	console.log("C to F");
+    	toFahrenheit(temp);
+   	 	} else {
+    	console.log("nothing");
+    }
+
+	}
+});
